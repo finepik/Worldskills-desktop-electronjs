@@ -1,0 +1,60 @@
+
+label{
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email']{
+    display: block;
+    width: 400px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: blanchedalmond;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-control{
+    margin-bottom: 20px;
+}
+.error{
+    color: darkred;
+}
+
+.clickSubmit{
+    margin-bottom: 30px;
+}
+
+
+.App{display: grid;
+    grid-template-areas:
+  'h h'
+  'n s';
+    grid-template-rows: 120px 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+.Header{
+    grid-area: h;
+}
+.Navbar{
+    grid-area: n;
+    padding-top: 30px;
+    color: #BD2A4E;
+    font-size: 20px;
+    text-align: center;
+    font-family: Papyrus;
+    font-weight: bold;
+}
+.Screen{
+    grid-area: s;
+    overflow-x: scroll;
+    weight:100%
+}
+.logo{
+    width:130px ;
+    height:100px ;
+}
