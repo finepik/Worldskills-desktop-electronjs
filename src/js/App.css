@@ -36,6 +36,7 @@ input[type='email']{
   'n s';
     grid-template-rows: 120px 1fr;
     grid-template-columns: 2fr 10fr;
+    height: 100vh;
 }
 .Header{
     grid-area: h;
@@ -43,7 +44,7 @@ input[type='email']{
 .Navbar{
     grid-area: n;
     padding-top: 30px;
-    color: #BD2A4E;
+    color: #fff;
     font-size: 20px;
     text-align: center;
     font-family: Papyrus;

@@ -1,22 +1,24 @@
 
 import React from 'react';
-import Navbar from "./components/Navbar.jsx";
-import Screens from "./components/Screens.jsx";
 import './App.css';
-import leo from './img_4.png'
-import logo from './wsht-red.png'
+import AppOrg from "./components/OrgForm/AppOrg.jsx";
+import AppExperts from "./components/ExpertForm/AppExperts.jsx";
+import AppParticipants from "./components/ParticipantPage/AppParticipants.jsx";
+import Login from "./Login.jsx";
+import leo from "./img_4.png";
+import logo from "./wsht-red.png";
 
 export default function App() {
-  const[NavbarObserver, setNavbarObserver]=React.useState('FirstPage')
-function NavbarClick(currentPage){
-      setNavbarObserver(currentPage)
-}
-  return (
-     <div style={{ backgroundImage: `url(${leo})`}} className='App'>
-      <header  className='Header'> <img className='logo' src={logo}/>FUCKING APP</header>
-      <Navbar  NavbarClick={NavbarClick}/>
-      <div  className='Screen'><Screens  NavbarObserver={NavbarObserver}/></div>
 
+  return (
+     <div>
+            <AppOrg/>
+             <AppExperts/>
+             <AppParticipants/>
+        {/* <div style={{ backgroundImage: `url(${leo})`, height: "100vh"}}>
+             <header  className='Header'> <img className='logo' src={logo}/>WS App</header>
+             <Login/>
+         </div>*/}
      </div>
   )
 }

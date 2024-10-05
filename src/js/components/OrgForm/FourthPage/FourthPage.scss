@@ -1,0 +1,90 @@
+$base: #5BB9B8;
+$subtle: #54a1a0;
+$rain: #2C3845;
+$poppy: #BD2A4E;
+$darkGrey: #202932;
+$lightGray: #28333f;
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-right: 30px;
+
+}
+
+thead{
+    th{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+th,
+td {
+    border: 1px solid $rain;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    color: #BD2A4E;
+   font-family: Papyrus;
+    font-weight: bold;
+
+}
+
+th {
+    border: 1px solid $rain;
+    background-color: $darkGrey;
+}
+
+tr:nth-child(2n) td{
+    background-color: $darkGrey;
+}
+tr:nth-child(2n + 1) td{
+    background-color: $lightGray;
+}
+
+form {
+    display: flex;
+    gap: 5px;
+}
+
+form * {
+    font-size: 17px;
+}
+
+tr {
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+td {
+    padding: 10px 10px 0;
+    text-align: center;
+
+}
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    font-weight: 700;
+}
+tfoot {
+    th {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        color: $rain;
+    }
+}
+
+input{
+    font-family: Papyrus;
+}
